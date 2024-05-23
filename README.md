@@ -2,7 +2,7 @@
 Um programa em C para gerenciar informações de aeronaves, permitindo inserção, atualização e visualização de dados através de um menu interativo, com validações de entrada e uso de funções do sistema.
 
 ## :link: Ambiente
-Visual Studio Code
+- Visual Studio Code
 ```
 1.89.1
 ```
