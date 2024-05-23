@@ -1,21 +1,27 @@
-# 📄 Programação I em execução
-Um programa em C para gerenciar informações de aeronaves, permitindo inserção, atualização e visualização de dados através de um menu interativo, com validações de entrada e uso de funções do sistema.
+# 📄 Programming I running
+A C program to manage aircraft information, allowing insertion, updating and visualization of data through an interactive menu, with input validations and use of system functions.
 
-## :link: Ambiente
+## :link: Development environment
 - Visual Studio Code
 ```
 1.89.1
 ```
+- GCC
+```
+gcc.exe (tdm64-1) 10.3.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
 
-## :link: Objetivo e descrição
-O programa desenvolvido em linguagem C é um sistema destinado ao cadastro e gerenciamento de informações sobre aeronaves. Ele permite que o usuário insira, atualize e visualize dados de diferentes modelos de aviões. O sistema utiliza uma estrutura chamada `Aviao` para armazenar informações sobre cada aeronave. Essa estrutura contém campos para armazenar o nome do modelo do avião, o número de assentos, os tipos de motores, o tipo de corredor, o alcance em quilômetros e o número de destinos operados por esse modelo.
+## :link: Purpose and description
+The program developed in C language is a system designed to register and manage information about aircraft. It allows the user to input, update and view data from different airplane models. The system uses a structure called `Aviao` to store information about each aircraft. This structure contains fields to store the airplane model name, number of seats, engine types, aisle type, range in kilometers, and number of destinations operated by that model.
 
-Para garantir a funcionalidade do sistema, várias funções foram implementadas. A função `tamanho_string` calcula o tamanho de uma string, enquanto a função `stringparaint` converte uma string que representa um número para um valor inteiro. A função `menucaract` é responsável por coletar informações detalhadas sobre um avião, com validação de entrada para assegurar que os campos não fiquem vazios. A função `informacao` itera sobre uma lista de aviões e chama `menucaract` para coletar informações de cada avião. A função `tabela` exibe uma tabela com todos os dados cadastrados dos aviões.
+To ensure the functionality of the system, several functions have been implemented. The `string_size` function calculates the size of a string, while the `stringtoint` function converts a string representing a number to an integer value. The `menucaract` function is responsible for collecting detailed information about an airplane, with input validation to ensure that fields are not empty. The `information` function iterates over a list of planes and calls `menucaract` to collect information for each plane. The `table` function displays a table with all the planes’ registered data.
 
-Além disso, a função `editar_aviao` permite atualizar informações específicas de um avião selecionado, e a função `atualizardados` exibe uma tabela dos dados e permite a seleção de um avião para atualizar suas informações. A função `total` exibe o número total de aviões cadastrados, enquanto a função `menu_buscarchave` permite buscar e visualizar informações dos aviões por palavras-chave, como o modelo. Por fim, a função `numeroavioes` solicita o número total de aviões a serem cadastrados e valida a entrada. 
+Additionally, the `edit_aviao` function allows you to update specific information for a selected plane, and the `updatedata` function displays a table of data and allows you to select an aircraft to update its information. The `total` function displays the total number of registered planes, while the `menu_buscarchave` function allows you to search and view plane information by keywords, such as model. Finally, the `numberavioes` function requests the total number of planes to be registered and validates the entry.
 
-A função principal `main` implementa um menu interativo que permite ao usuário acessar as diferentes funcionalidades do programa. O menu apresenta opções para inserir informações, exibir a tabela dos dados informados, gerar relatórios por palavras-chave, atualizar dados, mostrar a quantidade de dados e sair do programa. 
+The main function `main` implements an interactive menu that allows the user to access the different functionalities of the program. The menu presents options to insert information, display the table of entered data, generate reports by keywords, update data, show the amount of data and exit the program.
 
-O programa inclui validações para garantir que os dados inseridos pelo usuário sejam válidos. Essas validações verificam se os campos não estão vazios e asseguram que as entradas numéricas sejam válidas e positivas. Além disso, para melhorar a experiência do usuário, o programa utiliza funções do sistema, como `system("cls")` para limpar a tela e `system("PAUSE")` para pausar a execução, permitindo uma navegação mais limpa e organizada.
-
-Em resumo, este programa é uma ferramenta robusta para o gerenciamento de informações de aeronaves, permitindo que usuários insiram, visualizem, atualizem e busquem dados de forma eficiente. Ele serve como um exemplo prático de como utilizar estruturas de dados e técnicas de validação de entrada em C para construir um sistema interativo e funcional.
+The program includes validations to ensure that the data entered by the user is valid. These validations verify that fields are not empty and ensure that numeric entries are valid and positive. Furthermore, to improve the user experience, the program uses system functions, such as `system("cls")` to clear the screen and `system("PAUSE")` to pause execution, allowing cleaner navigation and organized.
+In summary, this program is a robust tool for managing aircraft information, allowing users to enter, view, update and search data efficiently. It serves as a practical example of how to use data structures and input validation techniques in C to build an interactive and functional system.
